@@ -1,0 +1,29 @@
+import random
+
+import time
+
+lengtht = ""
+code = ""
+
+def create():
+    global lengtht, code
+    while len(lengtht) < 3:
+        lengtht += str(random.randint(0,9))
+    code += lengtht
+    lengtht = ""
+
+def generate_new_code():
+    global code
+    create()
+    code += " "
+    create()
+
+    code += " "
+    create()
+    print(code)
+    time.sleep(30)
+    if 1 == 1:
+        code = ""
+
+while 1 == 1:
+    generate_new_code()
