@@ -22,6 +22,10 @@ def generate_new_code():
     create()
     print(code)
     time.sleep(30)
+#instead, you could try
+#time.sleep(10)
+#print("new code in 20 seconds")
+#time.sleep(20)
     if 1 == 1:
         code = ""
 
